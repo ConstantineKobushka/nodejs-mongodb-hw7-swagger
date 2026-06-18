@@ -1,0 +1,28 @@
+# swagger/components/schemas/user.yaml
+
+type: object
+required:
+  - name
+  - email
+  - password
+properties:
+  _id:
+    description: "User's id"
+    type: string
+    example: 65e4decdd286b30065d54af9
+  name:
+    description: "User's name"
+    type: string
+    example: 'John Doe'
+  email:
+    description: "User's email"
+    type: string
+    example: 'john.doe@example.com'
+  password:
+    description: "User's password"
+    type: string
+    example: '$2b$10$hxgm.scsqCiiTwWexanDCu9aUrz6XRxMRN71xhwZLT46lXJHIbwSK'
+  verify:
+    description: 'User was verified'
+    type: boolean
+    example: true

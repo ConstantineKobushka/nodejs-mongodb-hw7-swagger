@@ -1,0 +1,63 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: My contacts app
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  description: This is a documentation of my contacts app
+tags:
+  - name: User
+    description: Operations about authentication and users.
+  - name: Contacts
+    description: Operations about contacts.
+servers:
+  - url: http://localhost:3000
+  - url: https://contacts-mb5h.onrender.com
+paths:
+  /auth/register:
+    post:
+      $ref: ../swagger/paths/auth/register.yaml
+  /auth/verify:
+    get:
+      $ref: ../swagger/paths/auth/verify.yaml
+  /auth/login:
+    post:
+      $ref: ../swagger/paths/auth/login.yaml
+  /auth/get-oauth-url:
+    get:
+      $ref: ../swagger/paths/auth/getOAuthUrl.yaml
+  /auth/confirm-oauth:
+    post:
+      $ref: ../swagger/paths/auth/confirmOAuth.yaml
+  /auth/refresh:
+    post:
+      $ref: ../swagger/paths/auth/refresh.yaml
+  /auth/request-reset-email:
+    post:
+      $ref: ../swagger/paths/auth/requestResetEmail.yaml
+  /auth/reset-pwd:
+    post:
+      $ref: ../swagger/paths/auth/resetPwd.yaml
+  /auth/logout:
+    post:
+      $ref: ../swagger/paths/auth/logout.yaml
+  /contacts:
+    get:
+      $ref: ../swagger/paths/contacts/get.yaml
+    post:
+      $ref: ../swagger/paths/contacts/post.yaml
+  /contacts/{id}:
+    get:
+      $ref: ../swagger/paths/contacts/{id}/get.yaml
+    put:
+      $ref: ../swagger/paths/contacts/{id}/put.yaml
+    patch:
+      $ref: ../swagger/paths/contacts/{id}/patch.yaml
+    delete:
+      $ref: ../swagger/paths/contacts/{id}/delete.yaml
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
