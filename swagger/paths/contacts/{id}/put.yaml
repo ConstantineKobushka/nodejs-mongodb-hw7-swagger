@@ -43,11 +43,11 @@ requestBody:
           photo:
             description: "Link to contact's photo"
             type: string
-            example: https://res.cloudinary.com/uqwgdu/image/upload/image.png
+            example: 'https://res.cloudinary.com/uqwgdu/image/upload/image.png'
             format: binary
 responses:
   '201':
-    description: Create a contact
+    description: 'Create a contact'
     content:
       application/json:
         schema:
@@ -62,7 +62,7 @@ responses:
               example: 201
             message:
               type: string
-              example: Successfully create a contact!
+              example: 'Successfully create a contact!'
             data:
               type: object
               $ref: '../../../components/schemas/contact.yaml'

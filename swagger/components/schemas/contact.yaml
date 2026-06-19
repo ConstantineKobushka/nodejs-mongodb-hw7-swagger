@@ -10,7 +10,7 @@ properties:
   _id:
     description: "Contact's id"
     type: string
-    example: 6a2d31cd1ff3dac8cd8069a5
+    example: '6a2d31cd1ff3dac8cd8069a5'
   name:
     description: "Contact's name"
     type: string
@@ -34,8 +34,8 @@ properties:
   userId:
     description: 'ID of the user who owns this contact'
     type: string
-    example: 6a2d291b4a5a453a06b63afb
+    example: '6a2d291b4a5a453a06b63afb'
   photo:
     description: "Link to contact's photo"
     type: string
-    example: https://res.cloudinary.com/uqwgdu/image/upload/image.png
+    example: 'https://res.cloudinary.com/uqwgdu/image/upload/image.png'

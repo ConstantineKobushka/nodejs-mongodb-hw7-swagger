@@ -1,6 +1,6 @@
 # swagger/components/responses/401.yaml
 
-description: Unauthorized error
+description: 'Unauthorized error'
 content:
   application/json:
     schema:
@@ -15,7 +15,7 @@ content:
           example: 401
         message:
           type: string
-          example: UnauthorizedError
+          example: 'UnauthorizedError'
         data:
           type: object
           required:

@@ -31,7 +31,7 @@ requestBody:
             example: '123456'
 responses:
   '200':
-    description: Register user
+    description: 'Register user'
     content:
       application/json:
         schema:
@@ -46,7 +46,7 @@ responses:
               example: 200
             message:
               type: string
-              example: Successfully registered a user!
+              example: 'Successfully registered a user!'
             data:
               type: object
               $ref: '../../components/schemas/user.yaml'

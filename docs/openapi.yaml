@@ -12,8 +12,7 @@ tags:
   - name: Contacts
     description: Operations about contacts.
 servers:
-  - url: http://localhost:3000
-  - url: https://contacts-mb5h.onrender.com
+  - url: https://contact-hub-api-4o9o.onrender.com
 paths:
   /auth/register:
     post:

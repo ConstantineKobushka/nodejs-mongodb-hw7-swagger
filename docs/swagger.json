@@ -11,10 +11,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
-    },
-    {
-      "url": "https://contacts-mb5h.onrender.com"
+      "url": "https://contact-hub-api-4o9o.onrender.com"
     }
   ],
   "tags": [
@@ -115,7 +112,7 @@
         ],
         "summary": "Verify email",
         "operationId": "verifyUserEmail",
-        "description": "Verify user's email by token from email",
+        "description": "Verify user`s email by token from email",
         "security": [
           {
             "bearerAuth": []
@@ -226,6 +223,27 @@
                           "description": "Uccess token",
                           "type": "string",
                           "example": "XJq8m9Yi13ErMUT2eCcvQnH2yXp7ZpPhKwvDTWQW"
+                        },
+                        "user": {
+                          "description": "User data",
+                          "type": "object",
+                          "properties": {
+                            "_id": {
+                              "description": "User id",
+                              "type": "string",
+                              "example": "6a2d291b4a5a453a06b63afb"
+                            },
+                            "name": {
+                              "description": "User name",
+                              "type": "string",
+                              "example": "John Doe"
+                            },
+                            "email": {
+                              "description": "User email",
+                              "type": "string",
+                              "example": "john.doe@example.com"
+                            }
+                          }
                         }
                       }
                     }
@@ -282,6 +300,9 @@
                 }
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
           }
         }
       }

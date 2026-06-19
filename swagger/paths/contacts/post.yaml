@@ -45,10 +45,10 @@ requestBody:
           userId:
             description: 'ID of the user who owns this contact'
             type: string
-            example: 6a2d291b4a5a453a06b63afb
+            example: '6a2d291b4a5a453a06b63afb'
 responses:
   '201':
-    description: Add a contact
+    description: 'Add a contact'
     content:
       application/json:
         schema:
@@ -63,7 +63,7 @@ responses:
               example: 201
             message:
               type: string
-              example: Successfully created a contact!
+              example: 'Successfully created a contact!'
             data:
               type: object
               $ref: '../../components/schemas/contact.yaml'

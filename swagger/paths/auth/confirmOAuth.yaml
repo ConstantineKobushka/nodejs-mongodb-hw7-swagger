@@ -4,7 +4,7 @@ tags:
   - User
 summary: Login with Google OAuth
 operationId: loginWithGoogle
-description: Login or register user using Google OAuth
+description: 'Login or register user using Google OAuth'
 security:
   - bearerAuth: []
 requestBody:
@@ -18,11 +18,11 @@ requestBody:
         properties:
           code:
             type: string
-            description: Google OAuth code
-            example: 4/0AX4XfWh...
+            description: 'Google OAuth code'
+            example: '4/0AX4XfWh...'
 responses:
   '200':
-    description: Successfully login with Google OAuth
+    description: 'Successfully login with Google OAuth'
     content:
       application/json:
         schema:
@@ -33,12 +33,12 @@ responses:
               example: 200
             message:
               type: string
-              example: Successfully login with Google OAuth
+              example: 'Successfully login with Google OAuth'
             data:
               type: object
               properties:
                 accessToken:
                   type: string
-                  example: XJq8m9Yi13ErMUT2eCcvQnH2yXp7ZpPhKwvDTWQW
+                  example: 'XJq8m9Yi13ErMUT2eCcvQnH2yXp7ZpPhKwvDTWQW'
   '401':
     $ref: '../../components/responses/401.yaml'

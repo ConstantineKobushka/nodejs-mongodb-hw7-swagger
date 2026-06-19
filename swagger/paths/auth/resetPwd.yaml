@@ -41,7 +41,7 @@ responses:
               example: 200
             message:
               type: string
-              example: Password was successfully reset!
+              example: 'Password was successfully reset!'
             data:
               type: object
   '401':

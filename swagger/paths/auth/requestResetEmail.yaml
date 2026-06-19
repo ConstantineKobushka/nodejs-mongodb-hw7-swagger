@@ -21,7 +21,7 @@ requestBody:
             example: 'john.doe@example.com'
 responses:
   '200':
-    description: Request reset email
+    description: 'Request reset email'
     content:
       application/json:
         schema:
@@ -36,7 +36,7 @@ responses:
               example: 200
             message:
               type: string
-              example: Reset password email was successfully sent!
+              example: 'Reset password email was successfully sent!'
             data:
               type: object
   '401':

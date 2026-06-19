@@ -4,12 +4,12 @@ tags:
   - User
 summary: Get Google OAuth URL
 operationId: getGoogleOAuthUrl
-description: Returns Google OAuth authorization URL
+description: 'Returns Google OAuth authorization URL'
 security:
   - bearerAuth: []
 responses:
   '200':
-    description: Successfully get Google OAuth url
+    description: 'Successfully get Google OAuth url'
     content:
       application/json:
         schema:
@@ -20,10 +20,12 @@ responses:
               example: 200
             message:
               type: string
-              example: Successfully get Google OAuth url
+              example: 'Successfully get Google OAuth url'
             data:
               type: object
               properties:
                 url:
                   type: string
-                  example: https://accounts.google.com/o/oauth2/auth?client_id=...
+                  example: 'https://accounts.google.com/o/oauth2/auth?client_id=...'
+  '401':
+    $ref: '../../components/responses/401.yaml'

@@ -4,12 +4,12 @@ tags:
   - User
 summary: Refresh session
 operationId: refreshSession
-description: Refresh access token using refresh token cookie
+description: 'Refresh access token using refresh token cookie'
 security:
   - bearerAuth: []
 responses:
   '200':
-    description: Successfully refreshed a session
+    description: 'Successfully refreshed a session'
     content:
       application/json:
         schema:
@@ -20,12 +20,12 @@ responses:
               example: 200
             message:
               type: string
-              example: Successfully refreshed a session!
+              example: 'Successfully refreshed a session!'
             data:
               type: object
               properties:
                 accessToken:
                   type: string
-                  example: XJq8m9Yi13ErMUT2eCcvQnH2yXp7ZpPhKwvDTWQW
+                  example: 'XJq8m9Yi13ErMUT2eCcvQnH2yXp7ZpPhKwvDTWQW'
   '401':
     $ref: '../../components/responses/401.yaml'

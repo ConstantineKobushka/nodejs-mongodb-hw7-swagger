@@ -4,20 +4,20 @@ tags:
   - User
 summary: Verify email
 operationId: verifyUserEmail
-description: Verify user's email by token from email
+description: 'Verify user`s email by token from email'
 security:
   - bearerAuth: []
 parameters:
   - name: token
     in: query
     required: true
-    description: Verification token
+    description: 'Verification token'
     schema:
       type: string
-      example: eyJhbGciOiJIUzI1NiIs...
+      example: 'eyJhbGciOiJIUzI1NiIs...'
 responses:
   '200':
-    description: Email verified successfully
+    description: 'Email verified successfully'
     content:
       application/json:
         schema:
@@ -28,6 +28,6 @@ responses:
               example: 200
             message:
               type: string
-              example: Email verified
+              example: 'Email verified'
   '401':
     $ref: '../../components/responses/401.yaml'
